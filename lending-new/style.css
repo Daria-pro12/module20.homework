@@ -1,0 +1,1379 @@
+@font-face {
+    font-family: 'Nunito Sans Italic';
+    src: url('fonts/Nunito_Sans/NunitoSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('fonts/Nunito_Sans/NunitoSans-VariableFont.ttf');
+}
+
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('fonts/Yeseva_One/YesevaOne-Regular.ttf');
+}
+
+body {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+}
+
+/*принцип KISS - добавила margin: 0; и padding: 0; в body*/
+body, body * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* принцип DRY - добавила .black-form, так как они имеют одинаковое значение background-color */
+.header,
+.completed-projects,
+.footer,
+.black-form {
+    background-color: #131313;
+}
+
+.conteiner {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.header-content,
+.footer-content {
+    font-size: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 83px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.logo {
+    color: #e3b873;
+    text-transform: uppercase;
+}
+
+/*принцип KISS - удалила margin: 0;, так как он уже указан для всех элементов body'*/
+.header-navigation,
+.project-navigation,
+.social-list,
+.footer-navigation {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.header-navigation__link,
+.footer-navigation__link {
+    color: white;
+    text-decoration: none;
+    margin-right: 47px;
+}
+
+address {
+    font-style: normal;
+}
+
+.phone,
+.title span,
+.header-navigation__link:hover,
+.footer-navigation__link:hover {
+    color: #e3b873;
+}
+
+/*принцип SOLID*/
+.button {
+    color: white;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+            box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.button--big {
+    width: 207px;
+    height: 51px;
+}
+
+.button--small {
+    width: 160px;
+    height: 37px;
+}
+
+.button--orange {
+    background-color: #e3b873;
+    border: 0;
+}
+
+.button--transparent {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.button--italic {
+    font-style: italic;
+}
+
+.button--normal {
+    font-style: normal;
+}
+
+.button--font11 {
+    font-size: 11px;
+}
+
+.button--font13 {
+    font-size: 13px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-image: url('images/hero-background.jpg');
+    height: 707px;
+    background-size: cover;
+}
+
+.dark-hero {
+    background-color: rgba(0, 0, 0, .7);
+    height: inherit;
+}
+
+/*принцип KISS - удалила margin: 0;, так как он уже указан для всех элементов body'*/
+.title,
+.detail__title {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #e3b873;
+    font-size: 27px;
+    line-height: 139%;
+    font-weight: 400;
+    width: 250px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 40px;
+    line-height: 133%;
+    font-weight: 400;
+    padding-top: 194px;
+    width: 20ch;
+}
+
+.hero-content {
+    font-size: 22px;
+    color: white;
+    width: 37ch;
+    line-height: 164%;
+    margin: 19px 0;
+}
+
+.completed-projects {
+    padding-bottom: 415px;
+}
+
+.project-navigation {
+    padding: 107px 0 53px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+}
+
+.project-navigation__link {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+.project-navigation__link:hover,
+.fantasies-style__link:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.project-content {
+    width: 40%;
+}
+
+.content {
+    font-size: 14px;
+    line-height: 191%;
+    margin-top: 34px;
+}
+
+.img-div-content {
+    display: none;
+}
+
+.detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.detail__title {
+    font-size: 18px;
+}
+
+.detail div {
+    margin-top: 42px;
+}
+
+.detail div:not(:first-child):not(:nth-of-type(2)) {
+    margin-top: 34px;
+}
+
+.detail span {
+    font-size: 13px;
+    line-height: 164%;
+}
+
+img[alt="Slider"] {
+    margin-top: 80px;
+}
+
+.online-control {
+    margin-top: -324px;
+    text-align: center;
+}
+
+/*принцип KISS - удалила margin: 0;, так как он уже указан для всех элементов body'*/
+.subtitle {
+    color: #000000;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 137%;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.online-control .subtitle {
+    color: white;
+}
+
+.icons {
+    margin: 13px 0 31px;
+}
+
+.video-online-control {
+    width: 65%;
+}
+
+hr {
+    margin: 63px auto 0;
+    background: #e3b873;
+    border-radius: 30px;
+    width: 55px;
+    height: 1.54px;
+    border: none;
+}
+
+/*принцип KISS - удалила margin: 0;, так как он уже указан для всех элементов body'*/
+.text-content {
+    color: #363636;
+    font-size: 18px;
+}
+
+.control-content {
+    margin: 34px auto 92px;
+    line-height: 204.6%;
+    width: 62ch;
+}
+
+.short-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    width: 770px;
+    row-gap: 33px;
+    margin: 0 auto;
+}
+
+.label {
+    display: block;
+    color: rgba(54, 54, 54, 0.5);
+    text-align: left;
+    font-size: 13px;
+}
+
+input {
+    border: none;
+    width: 230px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    color: #363636;
+    padding: 7px 0 8px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input::-webkit-input-placeholder {
+    color: #363636;
+}
+
+input::-moz-placeholder {
+    color: #363636;
+}
+
+input:-ms-input-placeholder {
+    color: #363636;
+}
+
+input::-ms-input-placeholder {
+    color: #363636;
+}
+
+input::placeholder {
+    color: #363636;
+}
+
+.label-checkbox {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake-checkbox {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.fake-checkbox::before {
+    content: "\2714";
+    opacity: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.checkbox:checked+.fake-checkbox::before {
+    opacity: 1;
+}
+
+.text-checkbox {
+    color: #181818;
+    font-size: 14px;
+    padding-left: 9px;
+}
+
+.types-repair {
+    text-align: center;
+    margin-top: 148px;
+}
+
+.repair-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+}
+
+.repair-content {
+    position: relative;
+    width: 330px;
+    background: white;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    margin: -127px auto 0;
+    text-align: left;
+    padding: 25px 0 50px 34px;
+}
+
+.repair-subtitle {
+    text-transform: none;
+    color: #363636;
+    font-size: 18px;
+}
+
+.repair-content__list {
+    margin: 13px 0 23px 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.repair-content__item,
+.clients-review {
+    color: #959595;
+    font-size: 13px;
+    line-height: 205%;
+}
+
+.die {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
+            box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    background-color: #e3b873;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 54px;
+}
+
+.repair-die {
+    position: relative;
+    width: 228px;
+    margin: -27px 0 0 31px;
+    font-size: 18px;
+}
+
+.measurement {
+    background-image: url('images/measurer-background.jpg');
+    background-repeat: no-repeat;
+    margin-top: 124px;
+}
+
+.services-measurer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 117px;
+    gap: 206px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+.services-measurer__number {
+    background: #e3b873;
+    border-radius: 30px;
+    border: 8px solid white;
+    width: 42px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+            box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 42px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+.services-measurer__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 11px;
+}
+
+.services-measurer__item:not(:last-of-type) {
+    margin-bottom: 86px;
+}
+
+.services-measurer__content {
+    color: #363636;
+    font-size: 14px;
+    width: 320px;
+}
+
+.black-form {
+    -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+    width: 506px;
+    margin-top: -12px;
+    padding: 27px 50px
+}
+
+.form-title {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    width: 25ch;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.black-form-label {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 164%;
+}
+
+.black-input {
+    margin-top: 48px;
+}
+
+.black-input:first-of-type {
+    margin-top: 39px;
+}
+
+.black-form-input {
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: inherit;
+}
+
+.black-form-input::-webkit-input-placeholder {
+    color: white;
+}
+
+.black-form-input::-moz-placeholder {
+    color: white;
+}
+
+.black-form-input:-ms-input-placeholder {
+    color: white;
+}
+
+.black-form-input::-ms-input-placeholder {
+    color: white;
+}
+
+.black-form-input::placeholder {
+    color: white;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
+:focus::placeholder {
+    color: transparent;
+}
+
+.black-form-checkbox {
+    margin-top: 16px;
+}
+
+.black-form-text-checkbox {
+    color: white;
+}
+
+.black-form-button {
+    margin-top: 40px;
+    float: right;
+}
+
+.materials-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 38px;
+}
+
+.materials-content__text {
+    color: #e3b873;
+    font-size: 18px;
+    line-height: 143%;
+    width: 20ch;
+    margin-left: 25px;
+    margin-right: 160px;
+}
+
+.fantasies {
+    background-image: url('images/fantasies-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 245px;
+}
+
+.fantasies-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.fantasies-foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 43px;
+}
+
+.fantasies-img1,
+.fantasies-img2 {
+    display: -ms-grid;
+    display: grid;
+    gap: 40px;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+}
+
+.fantasies-img1 {
+    margin: -41px 0;
+}
+
+.fantasies-img2 {
+    margin-top: -113px;
+}
+
+.dark-fantasies {
+    background: -o-linear-gradient(340.2deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    height: inherit;
+}
+
+.fantasies-title {
+    width: 20ch;
+    padding-top: 137px;
+}
+
+/*принцип KISS - удалила padding: 0;, так как он уже указан для всех элементов body'*/
+.fantasies-style__list {
+    list-style: none;
+    margin: 47px 0;
+}
+
+.fantasies-style__item {
+    margin-top: 23px;
+}
+
+.fantasies-style__link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.clients {
+    text-align: center;
+    margin-top: 110px;
+    background-image: url('images/clients-background.jpg');
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+}
+
+.clients-content {
+    line-height: 164%;
+    text-align: center;
+}
+
+.clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 54px;
+    margin-top: 40px;
+    padding-bottom: 355px;
+}
+
+.clients-item {
+    width: 376px;
+}
+
+.clients-card {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    padding: 24px 32px 90px 20px;
+    text-align: left;
+}
+
+.clients-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 22px;
+    gap: 23px;
+}
+
+.clients-data img {
+    width: 76px;
+    height: 76px;
+}
+
+/*принцип KISS - удалила margin: 0;, так как он уже указан для всех элементов body'*/
+.clients-name {
+    color: #181818;
+    width: 15ch;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 127%;
+    font-weight: 400;
+}
+
+.clients-review {
+    line-height: 180%;
+    margin-top: 5px;
+}
+
+.clients-die {
+    margin: -27px 0 0 0;
+    width: 300px;
+    font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+form[name="form-question"] {
+    background-color: #181818;
+    width: 70%;
+    margin: -223px auto 0;
+    padding: 34px 181px;
+    text-align: center;
+}
+
+.title-question {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.black-form-data {
+    display: -ms-grid;
+    display: grid;
+    gap: 58px;
+    padding-top: 46px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.black-form-checkbox-q {
+    margin-top: 47px;
+    text-align: center;
+}
+
+.black-form-button-q {
+    margin-top: 50px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: -250px;
+    background-image: url('images/contact-background.jpg');
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.dark-contact {
+    background: -webkit-gradient(linear,
+            left top, left bottom,
+            color-stop(3.4704934805631638%, rgba(24, 24, 24, 0.9)),
+            to(rgba(24, 24, 24, 0.72)));
+    background: -o-linear-gradient(top,
+            rgba(24, 24, 24, 0.9) 3.4704934805631638%,
+            rgba(24, 24, 24, 0.72) 100%);
+    background: linear-gradient(180deg,
+            rgba(24, 24, 24, 0.9) 3.4704934805631638%,
+            rgba(24, 24, 24, 0.72) 100%);
+}
+
+.address {
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 285px;
+}
+
+/*принцип KISS - удалила padding: 0;, так как он уже указан для всех элементов body*/
+.social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    margin-top: 26px;
+}
+
+.map {
+    margin-top: 45px;
+    margin-bottom: 67px;
+    width: 75%;
+}
+
+.footer-content {
+    height: 133px;
+}
+
+@media screen and (max-width: 1280px) {
+    .conteiner {
+        max-width: 1000px;
+    }
+
+    .logo,
+    .hero-conteiner {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /*принцип KISS - удалила 
+    .header-navigation,
+    .footer-navigation {
+        padding: 0;
+    }, так как он уже указан для всех элементов body'*/
+
+
+    .header-navigation__link,
+    .footer-navigation__link,
+    .header .button,
+    .footer .button {
+        margin-right: 18px;
+    }
+
+    .project-content {
+        width: 100%;
+        text-align: -webkit-center;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .img-div-content {
+        display: block;
+        margin-top: 50px;
+        width: 70%;
+
+    }
+
+    .img-project-content {
+        width: 100%;
+    }
+
+    .detail>div {
+        margin-top: 34px;
+    }
+
+    img[alt="Slider"],
+    .img-project,
+    .fantasies-img2,
+    .fantasies-img {
+        display: none;
+    }
+
+    .services-measurer-content {
+        gap: 70px;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        padding-top: 30px;
+    }
+
+    .fantasies-content {
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        padding-bottom: 25px;
+    }
+
+    form[name="form-question"] {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .detail {
+        text-align: justify;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .detail div {
+        width: 35%;
+    }
+
+    .services-measurer-content {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .services-measurer__content {
+        width: 215px;
+    }
+
+    .black-form {
+        width: 395px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .phone {
+        color: white;
+        text-decoration: none;
+    }
+
+    .form-content {
+        gap: 25px;
+    }
+
+    .clients {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner {
+        max-width: 694px;
+    }
+
+    .header-content {
+        height: 57px;
+    }
+
+    .phone {
+        padding-right: 18px;
+    }
+
+    .header .button,
+    .project-navigation,
+    .measurement,
+    .fantasies-style__list,
+    .fantasies-foto,
+    .footer {
+        display: none;
+    }
+
+    .hero {
+        height: 476px;
+        background-position: center;
+    }
+
+    .hero-title {
+        padding-top: 85px;
+    }
+
+    .hero-content {
+        line-height: 136%;
+    }
+
+    .project-content .title {
+        margin-top: 36px;
+    }
+
+    .img-div-content {
+        position: relative;
+    }
+
+    .img-div-content::before,
+    .img-div-content::after {
+        content: "";
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: calc((100% - 36px) / 2);
+    }
+
+    .img-div-content::before {
+        background: url('images/icons/arrow-left.svg');
+        left: 15px;
+    }
+
+    .img-div-content::after {
+        background-image: url('images/icons/arrow-right.svg');
+        right: 15px;
+    }
+
+    .short-form {
+        width: 75%;
+        -webkit-column-gap: 35px;
+           -moz-column-gap: 35px;
+                column-gap: 35px;
+    }
+
+    .fantasies-img {
+        display: block;
+        width: 100%;
+    }
+
+    .control-content {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .types-repair,
+    .clients {
+        margin-top: 83px;
+    }
+
+    .repair-list {
+        gap: 60px;
+    }
+
+    .fantasies,
+    .dark-fantasies {
+        background-image: none;
+        background-color: #181818;
+    }
+
+    .fantasies {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .fantasies-title {
+        padding-top: 55px;
+        text-align: center;
+    }
+
+    form[name="form-question"] {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .conteiner {
+        max-width: 520px;
+    }
+
+    .hero-title {
+        font-size: 23px;
+    }
+
+    .hero-content {
+        font-size: 14px;
+        margin-top: 24px;
+        margin-bottom: 55px;
+    }
+
+    form[name="form-question"], .title-question {
+        width: 100%;
+    }
+    
+    .address {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .button {
+        width: 100%;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    .button-type-2 {
+        margin: 26px 0 0 0;
+    }
+
+    .completed-projects {
+        padding-bottom: 0;
+    }
+
+    .completed-projects .img-div-content {
+        margin-top: 75px;
+    }
+
+    .detail__title {
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+
+    .content {
+        font-size: 11px;
+        line-height: 160%;
+    }
+
+    .detail span {
+        font-size: 11px;
+        line-height: 136%;
+    }
+
+    .online-control {
+        margin-top: 0;
+        padding-top: 58px;
+        background-color: #131313;
+    }
+
+    .video-online-control {
+        width: 75%;
+    }
+
+    hr {
+        margin-top: 28px;
+    }
+
+    .control-content {
+        color: #ffffff;
+        font-size: 11px;
+        line-height: 170%;
+    }
+
+    .label {
+        line-height: 164%;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    input {
+        background-color: #131313;
+        color: #ffffff;
+        border-bottom: 1px solid white;
+        width: 340px;
+    }
+
+    input::-webkit-input-placeholder {
+        color: white;
+    }
+
+    input::-moz-placeholder {
+        color: white;
+    }
+
+    input:-ms-input-placeholder {
+        color: white;
+    }
+
+    input::-ms-input-placeholder {
+        color: white;
+    }
+
+    input::placeholder {
+        color: white;
+    }
+
+    .short-form {
+        height: 290px;
+        gap: 0;
+    }
+
+    .input:not(:first-child) {
+        margin-top: 63px;
+    }
+
+    .short-form .button {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-top: 37px;
+    }
+
+    .first-checkbox,
+    .black-form-checkbox-q {
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .text-checkbox {
+        color: white;
+    }
+
+    .fantasies {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dark-fantasies,
+    .fantasies {
+        background-color: white;
+    }
+
+    .fantasies-title {
+        font-size: 22px;
+    }
+
+    .fantasies-content {
+        padding: 0;
+    }
+
+    .fantasies .img-div-content {
+        margin-top: 40px;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .question {
+        background-color: #181818;
+    }
+
+    form[name="form-question"] {
+        margin-top: -121px;
+        padding-bottom: 0;
+    }
+
+    .title-question {
+        padding-top: 175px;
+    }
+
+    .black-form-data {
+        display: block;
+        padding-top: 56px;
+    }
+
+    .black-form-input {
+        border-bottom: 1px solid white;
+    }
+
+    .contact {
+        background-image: none;
+        background-color: #181818;
+        margin-top: -1px;
+    }
+
+    .contact address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .map {
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+        margin-bottom: 42px;
+    }
+
+    .address {
+        padding-top: 0;
+        width: 90%;
+    }
+
+    .social-list {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .conteiner {
+        max-width: 340px;
+    }
+
+    .logo,
+    .hero-conteiner,
+    .phone {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .img-div-content,
+    .video-online-control,
+    .control-content,
+    .map,
+    .short-form {
+        width: 100%;
+    }
+
+    .detail {
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+        -webkit-column-gap: 60px;
+           -moz-column-gap: 60px;
+                column-gap: 60px;
+    }
+
+    .short-form .button {
+        margin: 37px 0 0 0;
+    }
+
+    .short-form {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    form[name="form-question"] {
+        padding: 0;
+    }
+}
