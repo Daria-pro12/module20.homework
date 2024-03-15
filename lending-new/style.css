@@ -18,11 +18,12 @@ body {
 }
 
 /*принцип KISS - добавила margin: 0; и padding: 0; в body*/
-body, body * {
+body,
+body * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* принцип DRY - добавила .black-form, так как они имеют одинаковое значение background-color */
@@ -46,11 +47,11 @@ body, body * {
     display: flex;
     height: 83px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .logo {
@@ -68,7 +69,7 @@ body, body * {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .header-navigation__link,
@@ -94,7 +95,7 @@ address {
     color: white;
     border-radius: 2px;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
-            box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
     text-transform: uppercase;
     font-family: inherit;
 }
@@ -188,8 +189,8 @@ address {
 .project-navigation {
     padding: 107px 0 53px;
     -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
 }
 
 .project-navigation__link {
@@ -213,11 +214,11 @@ address {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     color: white;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .project-content {
@@ -239,7 +240,7 @@ address {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .detail__title {
@@ -316,13 +317,13 @@ hr {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
     width: 770px;
     row-gap: 33px;
     margin: 0 auto;
@@ -382,8 +383,8 @@ input::placeholder {
     background: #E3B873;
     color: #fff;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .fake-checkbox::before {
@@ -414,10 +415,10 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -426,7 +427,7 @@ input::placeholder {
     width: 330px;
     background: white;
     -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
-            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
     margin: -127px auto 0;
     text-align: left;
     padding: 25px 0 50px 34px;
@@ -453,7 +454,7 @@ input::placeholder {
 
 .die {
     -webkit-box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
-            box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     background-color: #e3b873;
     color: white;
@@ -480,12 +481,12 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 117px;
     gap: 206px;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
 }
 
 .services-measurer__number {
@@ -494,14 +495,14 @@ input::placeholder {
     border: 8px solid white;
     width: 42px;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
-            box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
     color: #ffffff;
     text-align: center;
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 42px;
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .services-measurer__item {
@@ -509,10 +510,10 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 11px;
 }
 
@@ -528,7 +529,7 @@ input::placeholder {
 
 .black-form {
     -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
     width: 506px;
     margin-top: -12px;
     padding: 27px 50px
@@ -622,13 +623,13 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: 38px;
 }
 
@@ -653,10 +654,10 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .fantasies-foto {
@@ -664,7 +665,7 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 43px;
 }
 
@@ -674,7 +675,7 @@ input::placeholder {
     display: grid;
     gap: 40px;
     -ms-flex-line-pack: baseline;
-        align-content: baseline;
+    align-content: baseline;
 }
 
 .fantasies-img1 {
@@ -730,10 +731,10 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 54px;
     margin-top: 40px;
     padding-bottom: 355px;
@@ -746,7 +747,7 @@ input::placeholder {
 .clients-card {
     background: #ffffff;
     -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
-            box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
     padding: 24px 32px 90px 20px;
     text-align: left;
 }
@@ -756,10 +757,10 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 22px;
     gap: 23px;
 }
@@ -792,11 +793,11 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 form[name="form-question"] {
@@ -862,8 +863,8 @@ form[name="form-question"] {
 /*принцип KISS - удалила padding: 0;, так как он уже указан для всех элементов body*/
 .social-list {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 15px;
     margin-top: 26px;
 }
@@ -937,15 +938,15 @@ form[name="form-question"] {
     .services-measurer-content {
         gap: 70px;
         -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
         padding-top: 30px;
     }
 
     .fantasies-content {
         -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
         padding-bottom: 25px;
     }
 
@@ -959,8 +960,8 @@ form[name="form-question"] {
     .detail {
         text-align: justify;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .detail div {
@@ -1064,8 +1065,8 @@ form[name="form-question"] {
     .short-form {
         width: 75%;
         -webkit-column-gap: 35px;
-           -moz-column-gap: 35px;
-                column-gap: 35px;
+        -moz-column-gap: 35px;
+        column-gap: 35px;
     }
 
     .fantasies-img {
@@ -1124,10 +1125,11 @@ form[name="form-question"] {
         margin-bottom: 55px;
     }
 
-    form[name="form-question"], .title-question {
+    form[name="form-question"],
+    .title-question {
         width: 100%;
     }
-    
+
     .address {
         font-size: 18px;
     }
@@ -1138,7 +1140,7 @@ form[name="form-question"] {
         width: 100%;
         border-radius: 0;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
     }
 
     .button-type-2 {
@@ -1231,8 +1233,8 @@ form[name="form-question"] {
 
     .short-form .button {
         -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
+        -ms-flex-order: 1;
+        order: 1;
         margin-top: 37px;
     }
 
@@ -1306,17 +1308,17 @@ form[name="form-question"] {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .map {
         -webkit-box-ordinal-group: 0;
-            -ms-flex-order: -1;
-                order: -1;
+        -ms-flex-order: -1;
+        order: -1;
         margin-bottom: 42px;
     }
 
@@ -1356,11 +1358,11 @@ form[name="form-question"] {
 
     .detail {
         -webkit-box-pack: left;
-            -ms-flex-pack: left;
-                justify-content: left;
+        -ms-flex-pack: left;
+        justify-content: left;
         -webkit-column-gap: 60px;
-           -moz-column-gap: 60px;
-                column-gap: 60px;
+        -moz-column-gap: 60px;
+        column-gap: 60px;
     }
 
     .short-form .button {
@@ -1369,8 +1371,8 @@ form[name="form-question"] {
 
     .short-form {
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 
     form[name="form-question"] {
